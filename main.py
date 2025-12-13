@@ -132,8 +132,6 @@ def update_patient(patient_id: str , patient_update: PatientUpdate):
 
 
 
-
-
 @app.delete('/delete/{patient_id}')
 def delete_patient(patient_id: str):
     data = load_data()
