@@ -3,8 +3,6 @@ import json
 
 
 app = FastAPI()
-
-
 def load_data():
     with open('patients.json', 'r') as f:
         data = json.load(f)
@@ -42,7 +40,6 @@ def sort_required(sort_by: str = Query(... , description='sort on the basis of h
     if sort_by not in sort_field:
         raise HTTPException(status_code=400 , detail=f'Invalid field: choose from {sort_field}')
     
-
     order_field = ['asc' , 'dsc']
     
     if order not in order_field:
@@ -55,6 +52,6 @@ def sort_required(sort_by: str = Query(... , description='sort on the basis of h
 
     return sorted_data
 
-
+ 
     
 
