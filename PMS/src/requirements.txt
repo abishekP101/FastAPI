@@ -4,4 +4,6 @@ pydantic
 pydantic[email]
 SQLAlchemy
 asyncpg
+pydantic-settings
+sqlmodel
 
