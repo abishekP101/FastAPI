@@ -2,8 +2,4 @@ fastapi
 uvicorn
 pydantic
 pydantic[email]
-ipykernel
-pandas
-numpy
-scikit-learn
-ipywidgets
+
