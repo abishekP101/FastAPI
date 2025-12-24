@@ -1,10 +1,3 @@
-from sqlalchemy import Column, String, Integer, Float
-from sqlalchemy.ext.declarative import declarative_base
-import uuid
-from sqlmodel import SQLModel , Field,Column
-import sqlalchemy.dialects.postgresql as pg
-
-
 from sqlmodel import SQLModel, Field
 import uuid
 import sqlalchemy.dialects.postgresql as pg
@@ -28,5 +21,4 @@ class Patient(SQLModel, table=True):
     weight: float = Field(nullable=False)
 
     def __repr__(self):
-        return f"<Patient {self.name}"
-
+        return f"<Patient {self.name}>"
